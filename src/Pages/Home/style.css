@@ -1,0 +1,129 @@
+.center {
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: center;
+  align-items: center;
+}
+
+.excel-table {
+  width: 100%;
+  flex: 1;
+}
+
+.light {
+  background-color: rgba(0, 0, 0, 0.05);
+}
+.action-content-img {
+  max-width: 100%;
+  height: 200px;
+  object-fit: contain;
+}
+.selected-id {
+  background-color: #ffc107;
+}
+
+.ex-tb-row {
+  width: 100%;
+  display: flex;
+  height: 50px;
+  align-items: center;
+}
+.ex-tb-cell {
+  flex-grow: 1;
+  flex-basis: 150px;
+  padding: 10px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.ex-container {
+  width: 100%;
+  min-height: 100vh;
+}
+
+.action-content {
+  width: 100%;
+  flex: 1;
+  position: relative;
+}
+
+.action-label,
+.send-btn {
+  width: 200px;
+  height: 50px;
+  background-color: green;
+  color: white;
+  font-weight: 500;
+  cursor: pointer;
+  border-radius: 5px;
+  font-size: 18px;
+  text-transform: capitalize;
+}
+button:disabled {
+  cursor: not-allowed;
+  background-color: rgba(0, 0, 0, 0.5);
+}
+
+.action-input {
+  display: none;
+}
+
+.success,
+.error,
+.progress {
+  font-weight: bolder;
+}
+
+.warning {
+  color: #ffc107;
+}
+.success {
+  color: #28a745;
+}
+.error {
+  color: #dc3545;
+}
+.progress {
+  color: #007bff;
+}
+.count-container {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  width: 200px;
+  height: 80px;
+  display: flex;
+  flex-flow: column nowrap;
+  justify-content: space-around;
+  align-items: flex-start;
+  padding: 20px;
+  font-size: 20px;
+  box-shadow: 0 0.5rem 1rem rgba(0, 0, 0, 0.15);
+  border-radius: 10px;
+  z-index: 100;
+}
+
+.count-container p {
+  margin: 0;
+}
+
+.progress-display {
+  position: absolute;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.t-head-container {
+  width: 100%;
+  height: 50px;
+  display: flex;
+  background-color: #343a40;
+}
+.t-head {
+  flex-grow: 1;
+  font-weight: bolder;
+  color: white;
+  flex-basis: 150px;
+  cursor: pointer;
+}

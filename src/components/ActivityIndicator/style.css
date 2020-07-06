@@ -1,0 +1,59 @@
+.activity-indicator,
+.activity-indicator-s,
+.activity-indicator-m,
+.activity-indicator-l {
+  animation: rotate360 0.5s linear infinite both;
+  box-sizing: border-box;
+  position: relative;
+  margin: 0 10px;
+}
+
+.activity-indicator-s.activity-indicator-s {
+  width: 20px;
+  height: 20px;
+}
+
+.activity-indicator-m.activity-indicator-m {
+  width: 40px;
+  height: 40px;
+}
+
+.activity-indicator-l {
+  width: 80px;
+  height: 80px;
+}
+
+.activity-indicator-bar-1 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 3px transparent solid;
+  z-index: 100;
+}
+
+.activity-indicator-bar-2 {
+  position: absolute;
+  top: 0;
+  left: 0;
+  bottom: 0;
+  right: 0;
+  border-radius: 50%;
+  border: 3px black solid;
+  border-style: solid;
+  border-left-color: transparent !important;
+  border-bottom-color: transparent !important;
+
+  z-index: 110;
+}
+
+@keyframes rotate360 {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
+}
